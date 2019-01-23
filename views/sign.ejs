@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+   <style>
+       .t_h2{
+           text-align: center;
+       }
+    .mytbn{
+        width: 100%; 
+        height: 100%;
+        
+        text-align: center;
+    }
+     .content{
+       border-radius: 6px;
+       margin-top: 10px;
+       padding: 20px;
+       border: 3px solid #077afb;
+       width: 600px;
+       height: 650px;
+       margin-left:auto;
+       margin-right: auto;
+     }
+     .img{
+       width: 100%;
+       height: 200px;
+     }
+   </style>
+  
+</head>
+<body>
+    
+    <form action="http://127.0.0.1:3000/sign" method="POST"  >
+      <div class = "content" >
+        <div class="form-group">
+          <img class = "img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlUg6xYxeUkX0Bup8Yx7soyMWo0zwH32QRHJ6noZh42rCmmYPTBw" alt="">
+          <br>
+          <h2><b> Sign up admin account</b> </h2>
+          <label>User Name</label>
+          <input type="text" class="form-control" id="idUsernam"  name = "username"> 
+
+          <label >Password</label>
+          <input type="password" class="form-control" id="idPassword"  name = "password">
+
+          <label >Email address</label>
+          <input type="email" class="form-control" id="idEmail" aria-describedby="emailHelp" placeholder="Enter email" name ="email">
+        </div>
+        <button type="submit" class="btn btn-primary mybtn" id="submit1" >Submit</button>
+        <br><br>
+        
+      </div>
+    </form>
+
+
+</body>
+</html>
